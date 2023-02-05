@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    position: fixed;
+    top: 47px;
+    right: 101px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(27, 25, 25, 0.27);
+    border: 1px solid rgba(27, 25, 25, 0.27);
+    cursor: pointer;
+    transition: left 0.4s ease;
+    border-radius: 0;
+    z-index: 99999;
+  }
+  .btn.click {
+    right: 101px;
+  }
+}
+
+
+.btn span {
+  color: white;
+  font-size: 28px;
+}
+
+.btn.click span:before {
+  content: '\f00d';
+}
+
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
+  z-index: 99999;
+}
+
+.sidebar.show {
+  z-index: 99999;
+  left: 0px;
+}
+
+.sidebar .text {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+}
+
+nav>ul {
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+nav>ul>li {
+  line-height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+nav ul li.active a {
+  color: cyan;
+  background: #1e1e1e;
+  border-left-color: cyan;
+}
+
+nav ul li a:hover {
+  color: rgb(251, 172, 172);
+  background: #1e1e1e;
+}
+
+nav ul ul {
+  position: static;
+  display: none;  
+}
+
+/*  */
+nav ul ul ul {
+  position: static;
+  display: none;
+}
+
+/*aaaaaaa  */
+
+nav ul .feat-show.show {
+  display: block;
+}
+
+nav ul .feat-show li .feat-show.show {
+  display: block;
+}
+
+/* show sub menu a*/
+.a-show.show {
+  display: block;
+}
+
+.a-btn.show {
+  display: block;
+}
+
+/* show sub menu a1 */
+.a1-show.show {
+  display: block;
+}
+
+.a1-btn.show {
+  display: block;
+}
+
+nav ul .serv-show.show1 {
+  display: block;
+}
+
+nav ul ul li {
+  line-height: 42px;
+  border-top: none;
+}
+
+nav ul ul li a {
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 50px;
+}
+
+nav ul ul li ul li a {
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 70px;
+}
+
+nav ul ul li ul li ul li a {
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 90px;
+}
+
+nav ul li.active ul li a {
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+}
+
+nav ul ul li a:hover {
+  color: rgb(245, 197, 197) !important;
+  background: #1e1e1e !important;
+}
+
+nav ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+
+nav ul li a span.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+  .btn {
+    position: fixed;
+    top: 47px;
+    right: 85px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(27, 25, 25, 0.27);
+    border: 1px solid rgba(27, 25, 25, 0.27);
+    cursor: pointer;
+    transition: left 0.4s ease;
+    border-radius: 0;
+    z-index: 99999;
+  }
+  .btn.click {
+    right: 85px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .btn {
+    position: fixed;
+    top: 47px;
+    right: 55px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(27, 25, 25, 0.27);
+    border: 1px solid rgba(27, 25, 25, 0.27);
+    cursor: pointer;
+    transition: left 0.4s ease;
+    border-radius: 0;
+    z-index: 99999;
+  }
+  .btn.click {
+    right: 55px;
+  }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+  .btn {
+    position: fixed;
+    top: 18px;
+    right: 7px; 
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(27, 25, 25, 0.27);
+    border: 1px solid rgba(27, 25, 25, 0.27);
+    cursor: pointer;
+    transition: left 0.4s ease;
+    border-radius: 0;
+    z-index: 99999;
+  }
+  .btn.click {
+    right: 7px;
+  }
+}
