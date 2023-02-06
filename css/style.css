@@ -141,12 +141,22 @@ ul.top_icons li a:hover {
 }
 
 .top_nav_right {
+    width: 38px;
+    z-index: 99;
+    margin-top: 0;
+}
+
+.top-nav-header{
     width: 17%;
     margin-top: 47px;
-    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
     z-index: 99;
-    right: -2%;
 }
+
+
 
 /*-- menu --*/
 .mobile-nav-button {
@@ -256,11 +266,7 @@ li.dropdown.act a.w3_icons_act {
 /*-- /search --*/
 
 .cd-header-buttons {
-    position: fixed;
     display: inline-block;
-    top: 47px;
-    right: 196px;
-    z-index: 99;
 }
 
 .cd-header-buttons li {
@@ -416,6 +422,63 @@ li.dropdown.act a.w3_icons_act {
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     -moz-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
+}
+/* pc */
+@media (min-width: 1024px){
+    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .cd-search {
+        position: absolute;
+        width: 100%;
+        top: 18%;
+        left: 0;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+    }
+    .top-nav-header{
+        width: 24%;
+        margin-top: 44px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        right: 0;
+        z-index: 99;
+    }
+    #staplesbmincart{
+        
+    }
+}
+
+/* mobile */
+@media (max-width: 740px){
+    .top-nav-header{
+        width: 40%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        right: 0;
+        z-index: 99;
+    }
+    .cd-search {
+        position: absolute;
+        width: 100%;
+        top: 22%;
+        left: 0;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+    }
 }
 
 .cd-search input {
@@ -1482,11 +1545,11 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 0%;
+        
     }
 
     .top_nav_right {
-        right: -1%;
+        
     }
 
     .mid_services_img {
@@ -1501,7 +1564,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: -1%;
+
     }
 }
 
@@ -1536,15 +1599,11 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 1%;
+        
     }
 }
 
 @media(max-width:1366px) {
-    .top_nav_right {
-        right: 1%;
-        margin-top: 48px;
-    }
 
     .cd-header-buttons {
         top: 47px;
@@ -1609,8 +1668,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 2.5%;
-        margin-top: 48px;
+        
     }
 
     .style-grid-1 img {
@@ -1671,8 +1729,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 3.5%;
-        margin-top: 48px;
+        
     }
 }
 
@@ -1716,8 +1773,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 4.3%;
-        margin-top: 48px;
+        
     }
 
     .style-grid-1 img {
@@ -1797,9 +1853,7 @@ button.btn1 {
     }
 
     #staplesbmincart {
-        left: 50%;
-        top: 16.9%;
-        width: 420px;
+
     }
 
     .check_box_one {
@@ -1811,8 +1865,7 @@ button.btn1 {
 
 @media(max-width:900px) {
     .top_nav_right {
-        right: 4.5%;
-        margin-top: 48px;
+        
     }
 
     .cd-header-buttons {
@@ -1892,8 +1945,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 7.5%;
-        margin-top: 48px;
+        
     }
 
     .error_page h4 {
@@ -1901,9 +1953,7 @@ button.btn1 {
     }
 
     #staplesbmincart {
-        left: 34%;
-        top: 16.9%;
-        width: 420px;
+        
     }
 }
 
@@ -1922,8 +1972,7 @@ button.btn1 {
 
 @media(max-width:768px) {
     .top_nav_right {
-        right: 8%;
-        margin-top: 48px;
+        
     }
 
     .cd-header-buttons {
@@ -2027,8 +2076,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 5.5%;
-        margin-top: 25px;
+        
     }
 
     .callbacks_tabs {
@@ -2065,9 +2113,7 @@ button.btn1 {
     }
 
     #staplesbmincart {
-        left: 23%;
-        top: 16.9%;
-        width: 420px;
+        
     }
 
     .news-right h4 {
@@ -2114,8 +2160,7 @@ button.btn1 {
 
 @media(max-width:600px) {
     .top_nav_right {
-        right: 7.5%;
-        margin-top: 25px;
+        
     }
 
     .single-right-left {
@@ -2123,9 +2168,7 @@ button.btn1 {
     }
 
     #staplesbmincart {
-        left: 7%;
-        top: 16.9%;
-        width: 410px;
+        
     }
 
     p.copy-right-w3ls-agileits {
@@ -2144,8 +2187,7 @@ button.btn1 {
 
 @media(max-width:568px) {
     .top_nav_right {
-        right: 8.5%;
-        margin-top: 25px;
+        
     }
 
     .cd-header-buttons {
@@ -2182,8 +2224,7 @@ button.btn1 {
 
 @media(max-width:480px) {
     .top_nav_right {
-        right: 12.5%;
-        margin-top: 25px;
+        
     }
 
     .style-grid-1-text h3,
@@ -2261,8 +2302,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 17.5%;
-        margin-top: 19px;
+        
     }
 
     .cd-header-buttons {
@@ -2287,9 +2327,7 @@ button.btn1 {
     }
 
     #staplesbmincart {
-        left: 4%;
-        top: 16.9%;
-        width: 340px;
+        
     }
 
     .footer-left p {
@@ -2390,8 +2428,7 @@ button.btn1 {
 
 @media(max-width:375px) {
     .top_nav_right {
-        right: 18.5%;
-        margin-top: 19px;
+        
     }
 
     .banner-top,
@@ -2472,8 +2509,7 @@ button.btn1 {
     }
 
     .top_nav_right {
-        right: 23%;
-        margin-top: 19px;
+        
     }
 
     .banner-top,
