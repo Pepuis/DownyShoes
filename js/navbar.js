@@ -3,7 +3,7 @@ const createNav = () => {
 
     nav.innerHTML = `<ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop Now</a></li>
+    <li><a href="shop.php">Shop Now</a></li>
     <li>
         <a class="feat-btn">Products
             <span class="fas fa-caret-down first"></span>
@@ -39,7 +39,7 @@ const createNav = () => {
             <span class="fas fa-caret-down second"></span>
         </a>
         <ul class="serv-show">
-            <li><a href="login/login.html">Login</a></li>
+            <li><a href="login/login.php">Login</a></li>
             <li><a href="register/register.html">Sign Up</a></li>
         </ul>
     </li>
