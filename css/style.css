@@ -2595,3 +2595,46 @@ ul {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.927);
 }
+
+
+/* recently viewed products */
+
+.wrap-recnet{
+    width: 100%;
+}
+
+.wrap-recnet>label{
+    padding: 10px 5px 5px 5px;
+}
+
+.recent-pd{
+    width: 100%;
+    height: auto;
+}
+
+.recent-pd-row{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #e4e4e4;
+}
+
+.recent-pd-row + .recent-pd-row{
+    margin-left: 10px;
+}
+
+.recent-pd-row img{
+    width: 100%;
+    object-fit: cover;
+    height: 120px;
+}
+
+.recent-pd-row a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+}
